@@ -6,7 +6,6 @@ namespace ConsoleApp1
     {
          public static string ToAlternativeCase(this string word)
              {
-
                 int wordLength = word.Length;
                 char[] wordarray = word.ToCharArray();
                 char[] result = new char[wordLength];
@@ -21,19 +20,17 @@ namespace ConsoleApp1
                         result[i] = Char.ToUpper(wordarray[i]);
                 }
                 string changedWord = new string(result);
-                Console.WriteLine(changedWord);
                 return changedWord;
                    throw new NotImplementedException();
         }
     }
     class Program
     {
-        
         static void Main(string[] args)
         {
-             
             string word = Console.ReadLine();
             string uResult = word.ToAlternativeCase();
+            Console.WriteLine(uResult);
             Console.ReadKey();
         }
     }
