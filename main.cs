@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 namespace ConsoleApp1
 {
     public static class Convertions
@@ -27,8 +26,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             string word = Console.ReadLine();
-            string uResult = Convertions.ToAlternativeCase(word);
-            Console.WriteLine(uResult);
+            Console.WriteLine(Convertions.ToAlternativeCase(word));
             Console.ReadKey();
         }
     }
