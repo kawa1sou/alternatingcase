@@ -4,7 +4,7 @@ namespace ConsoleApp1
 {
     public static class Convertions
     {
-         public static string ToAlternativeCase(this string word)
+         public static string ToAlternativeCase(string word)
              {
                 int wordLength = word.Length;
                 char[] wordarray = word.ToCharArray();
@@ -29,7 +29,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             string word = Console.ReadLine();
-            string uResult = word.ToAlternativeCase();
+            string uResult = Convertions.ToAlternativeCase(word);
             Console.WriteLine(uResult);
             Console.ReadKey();
         }
