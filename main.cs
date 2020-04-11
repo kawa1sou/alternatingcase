@@ -19,8 +19,8 @@ namespace ConsoleApp1
                     else
                         result[i] = Char.ToUpper(wordarray[i]);
                 }
-                string changedWord = new string(result);
-                return changedWord;
+                string word = new string(result);
+                return word;
                    throw new NotImplementedException();
         }
     }
@@ -29,8 +29,8 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             string word = Console.ReadLine();
-            string uResult = Convertions.ToAlternativeCase(word);
-            Console.WriteLine(uResult);
+            Convertions.ToAlternativeCase(word);
+            Console.WriteLine(word);
             Console.ReadKey();
         }
     }
